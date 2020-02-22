@@ -1,0 +1,46 @@
+aside {
+  font-family: Helvetica, sans-serif;
+  width: 33%;
+  float: right;
+
+  h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../assets/img/lines.png");
+    background-repeat: repeat;
+    span {
+      background: white;
+      padding: 5px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  form input[type="text"] {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  form input[type="submit"] {
+    padding: 10px;
+    width: 20%;
+    border: none;
+    background-color: #235e3d;
+    color: white;
+    cursor: pointer;
+  }
+}

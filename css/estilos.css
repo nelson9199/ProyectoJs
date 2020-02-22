@@ -11,10 +11,172 @@ body {
   background-attachment: fixed;
 }
 
+.clear_fix {
+  float: none;
+  clear: both;
+}
+
 #global {
   width: 65%;
   margin: 0 auto;
   margin-top: 30px;
   background-color: white;
-  padding: 25;
+  padding: 25px;
+  -webkit-box-shadow: 2px 2px 7px gray;
+          box-shadow: 2px 2px 7px gray;
+}
+
+header #logo {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 34px;
+  letter-spacing: 4;
+  background-color: #235e3d;
+  color: white;
+  text-align: center;
+  width: 320px;
+  height: 80px;
+  float: left;
+  margin-bottom: 20px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+header #menu {
+  font-family: Helvetica, sans-serif;
+  background: #333;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+header #menu ul {
+  line-height: 46px;
+}
+
+header #menu ul li {
+  height: 46px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  display: inline-block;
+}
+
+header #menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+header #menu ul li:hover {
+  background-color: #235e3d;
+}
+
+main #posts {
+  width: 65%;
+  float: left;
+  font-family: Helvetica, sans-serif;
+}
+
+main #posts .post {
+  padding: 7px;
+}
+
+main #posts .post h2 {
+  font-size: 30px;
+  color: #333;
+}
+
+main #posts .post span {
+  color: gray;
+  display: block;
+  margin-top: 5px;
+}
+
+main #posts .post p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+main #posts .post .button-more {
+  font-size: 14px;
+  padding: 15px;
+  background: #235e3d;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+
+aside {
+  font-family: Helvetica, sans-serif;
+  width: 33%;
+  float: right;
+}
+
+aside h4 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 10px;
+  color: #333;
+  background: url("../assets/img/lines.png");
+  background-repeat: repeat;
+}
+
+aside h4 span {
+  background: white;
+  padding: 5px;
+}
+
+aside img {
+  width: 100%;
+}
+
+aside p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+aside form input[type="text"] {
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: block;
+}
+
+aside form input[type="submit"] {
+  padding: 10px;
+  width: 20%;
+  border: none;
+  background-color: #235e3d;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.7);
+  margin: 0 auto;
+  width: 65%;
+  padding: 0 20;
+  text-align: center;
+  margin-top: 20px;
 }
